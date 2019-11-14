@@ -1,11 +1,20 @@
-# abc game
+# abc game 🏆
 A simple math game for 3rd graders. 
 
-It's a multiplayer game. The goal is to solve the puzzle. 
+### About the game
+
+It's a multiplayer game. The goal is to work together and solve a math puzzle. 
 
 Each player operates one button - `a`, `b` or `c` to increase the counter. 
 
-__Example party__:
+### Controls
+
+- `a` increase the __first__ number by 1. If the number can be at most `10`, then it turns 0
+- `b` increase the __second__ number by 1. If the number can be at most `10`, then it turns 0
+- `c` increase the __third__ number by 1. If the number can be at most `10`, then it turns 0
+- `n` get a new puzzle
+
+### Example party
 
 - player `a` increased his button to `2`
 - player `b` increased his button to `1 
