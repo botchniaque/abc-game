@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        document.addEventListener("keydown", keyDownTextField, false);
+
+        function newGame() {
+            document.getElementById('n').innerText = Math.floor(Math.random() * 101);
+            document.getElementById('win').innerText = "";
+            updateEq()
+        }
+
+        function updateEq() {
+            var eqDiv = document.getElementById('eq');
+            var a = Number(document.getElementById('a').innerText);
+            var b = Number(document.getElementById('b').innerText);
+            var c = Number(document.getElementById('c').innerText);
+            let value = a * b + c;
+            eqDiv.innerText = value;
+
+            let expected = Number(document.getElementById('n').innerText);
+
+            if (value === expected) {
+                document.getElementById('win').innerText = "You Win 🏆"
+            }
+        }
+
+        function updateDiv(id) {
+            var aDiv = document.getElementById(id);
+            val = Number(aDiv.innerText) + 1;
+            if (val > 10) {
+                val = 0
+            }
+            aDiv.innerText = val;
+            updateEq()
+        }
+
+        function keyDownTextField(e) {
+            var key = e.key;
+            switch (key) {
+                case 'a': updateDiv('a');break;
+                case 'b': updateDiv('b');break;
+                case 'c': updateDiv('c');break;
+                case 'n': newGame();break;
+            }
+        }
+
+    </script>
+</head>
+<body onload="newGame()">
+    <div>Calculate <span id="n">0</span></div>
+    <span id="a">0</span>
+    <span>*</span>
+    <span id="b">0</span>
+    <span>+</span>
+    <span id="c">0</span>
+    <span>=</span>
+    <span id="eq"></span>
+    <div id="win"></div>
+</body>
+
+</html>
