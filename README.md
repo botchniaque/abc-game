@@ -35,4 +35,4 @@ You Win 🏆
 ```
 
 
-_Inspired by STEAM ween in Berlin Bilingual School_
+_Inspired by STEAM week in Berlin Bilingual School_
