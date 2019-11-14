@@ -1,6 +1,8 @@
 # abc game 🏆
 A simple math game for 3rd graders. 
 
+[Play it!](https://botchniaque.github.io/abc-game/)
+
 ### About the game
 
 It's a multiplayer game. The goal is to work together and solve a math puzzle. 
