@@ -17,7 +17,7 @@ Each player operates one button - `a`, `b` or `c` to increase the counter.
 ### Example party
 
 - player `a` increased his button to `2`
-- player `b` increased his button to `1 
+- player `b` increased his button to `1`
 - player `c` increased his botton to `5` 
 
 ...but that's just not enough yet!
